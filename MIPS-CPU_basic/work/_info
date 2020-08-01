@@ -1,0 +1,230 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ASUS/Desktop/COmidterm/Midtern Project
+vALU_32b
+Z1 !s110 1527676674
+!i10b 1
+!s100 f00zGz>gl:WR3dZoDl2203
+IjQCaBjHoGMG=hkA>RFT[G2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1527469313
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALU_32b.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALU_32b.v
+L0 2
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1527676674.000000
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALU_32b.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALU_32b.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u_32b
+vALUControl
+R1
+!i10b 1
+!s100 ?4cE4RFhWLDH]z8SCQomS2
+IK^D<EJ]V1VMj:1N0`PJR92
+R2
+R0
+w1527675911
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALUControl.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALUControl.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALUControl.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/ALUControl.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u@control
+vDivider
+R1
+!i10b 1
+!s100 G3SRKcRmY[S[i8DV23YLz2
+Ia][[dNN9jTm1`aOk_1VOL2
+R2
+R0
+w1527675964
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Divider.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/Divider.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Divider.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Divider.v|
+!s101 -O0
+!i113 1
+R5
+n@divider
+vFA
+R1
+!i10b 1
+!s100 8:A7PKCP5Y1^inaA3LSK`3
+IBl<7fed@K=>W7gX=73ba23
+R2
+R0
+w1526820922
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/FA.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/FA.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/FA.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/FA.v|
+!s101 -O0
+!i113 1
+R5
+n@f@a
+vHiLo
+R1
+!i10b 1
+!s100 ofNg0f2>?6Llo]^0Kg9TJ1
+I@g=l6KRN6JDoDj2DLfVjH1
+R2
+R0
+w1527425873
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/HiLo.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/HiLo.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/HiLo.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/HiLo.v|
+!s101 -O0
+!i113 1
+R5
+n@hi@lo
+vMUX
+R1
+!i10b 1
+!s100 bPLRz`Nbd[7]cUiRWXzeA3
+ITWih;J_K_@5Z?LmjJ@67h0
+R2
+R0
+w1527507312
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/MUX.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/MUX.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/MUX.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/MUX.v|
+!s101 -O0
+!i113 1
+R5
+n@m@u@x
+vMux_1bALU
+R1
+!i10b 1
+!s100 @ROLOOgh@SXVk?ga?<nMg2
+ICUbe_BfAmMhZlNhLJ0Ab21
+R2
+R0
+w1526887801
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Mux_1bALU.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/Mux_1bALU.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Mux_1bALU.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Mux_1bALU.v|
+!s101 -O0
+!i113 1
+R5
+n@mux_1b@a@l@u
+vShifter
+R1
+!i10b 1
+!s100 [hh^1dQceE2=GWc9E31ki1
+I^Dfo?k6LiQaK3`o;fDoF30
+R2
+R0
+w1527521940
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Barrel_Shifter.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/Barrel_Shifter.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Barrel_Shifter.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/Barrel_Shifter.v|
+!s101 -O0
+!i113 1
+R5
+n@shifter
+vtb_ALU
+R1
+!i10b 1
+!s100 _Oa>VOClZOgF?9IFGi5Rg0
+IPY`Vnl<jS;nm[?^8a6;<M0
+R2
+R0
+w1527431755
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/tb_ALU.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/tb_ALU.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/tb_ALU.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/tb_ALU.v|
+!s101 -O0
+!i113 1
+R5
+ntb_@a@l@u
+vTotalALU
+R1
+!i10b 1
+!s100 _jK=^Gbn^]z9aoFAXZMFN1
+IcYmUeSgW]TaDl@daJd>aC0
+R2
+R0
+w1527676622
+8C:/Users/ASUS/Desktop/COmidterm/Midtern Project/TotalALU.v
+FC:/Users/ASUS/Desktop/COmidterm/Midtern Project/TotalALU.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ASUS/Desktop/COmidterm/Midtern Project/TotalALU.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/ASUS/Desktop/COmidterm/Midtern Project/TotalALU.v|
+!s101 -O0
+!i113 1
+R5
+n@total@a@l@u

@@ -1,0 +1,156 @@
+//	Title: MIPS Single-Cycle Processor
+//	Editor: Selene (Computer System and Architecture Lab, ICE, CYCU)
+module mips_pipeline( clk, rst );
+	input clk, rst;
+
+/*	reg[31:0] cycle ;
+/*	reg[31:0] cycle ;
+/*	reg[31:0] cycle ;
+	initial begin
+		cycle = 0;
+	end 
+	
+
+	always@(posedge clk) begin
+		cycle = cycle + 1;
+	end
+
+ /** 
+	
+	/* instruction bus
+	wire[31:0] instr;
+	
+	 break out important fields from instruction
+	wire [5:0] opcode, funct;
+    wire [4:0] rs, rt, rd, shamt;
+    wire [15:0] immed;
+    wire [31:0] extend_immed, b_offset;
+    wire [25:0] jumpoffset;
+	datapath signals
+    wire [4:0] rfile_wn;
+    wire [31:0] rfile_rd1, rfile_rd2, rfile_wd, alu_b, alu_out, b_tgt,
+                pc_incr, dmem_rdata, jump_addr, branch_addr;
+
+	
+
+	
+
+	
+	 jump offset shifter & concatenation
+	assign jump_addr = { pc_incr[31:28], jumpoffset <<2 };
+
+	
+	// ******************** vars **********************/
+	
+	// control_signals
+	wire RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, Jump, PCSrc ;
+	wire EX_Zero, MEM_zero ;
+	wire [2:0] Operation;
+	wire [1:0] ALUOp ;
+	wire [8:0] WME_signal ;   // = { RegDst, ALUSrc, ALUOp, MemRead, MemWrite, Branch, MemtoReg, RegWrite } ;
+	wire [4:0] WM_signal ;    // = { MemRead, MemWrite, Branch, MemtoReg, RegWrite } ;
+	wire [1:0] W_signal ;     // = { MemtoReg, RegWrite } ;
+
+	
+	// IF vars
+	wire [31:0] pc, pc_next ;
+	wire [31:0] IF_pc_incr, IF_instr ;
+	
+	// ID vars
+	wire [31:0] ID_pc_incr, ID_instr, ID_rfile_rd1, ID_rfile_rd2 ;
+	wire [5:0] opcode;
+    wire [4:0] rs, ID_rt, ID_rd, ID_shamt;
+    wire [15:0] immed;
+    wire [31:0] ID_extend_immed ;
+    // wire [25:0] jumpoffset;
+   
+    // EX vars
+	wire [31:0] EX_pc_incr, EX_rfile_rd1, EX_rfile_rd2, EX_extend_immed, EX_b_tgt, EX_alu_out ; 
+	wire [31:0] b_offset, alu_b ;
+	wire [5:0] funct ;
+	wire [4:0] EX_rt, EX_rd, EX_rfile_wn, EX_shamt ;
+	wire EX_zero ;
+
+	
+	// MEM vars 
+	wire [31:0] MEM_b_tgt, MEM_alu_out, MEM_rfile_rd2, MEM_dmem_rdata ;
+	wire [4:0] MEM_rfile_wn ;
+	
+	// WB vars
+	wire [31:0] WB_dmem_rdata, WB_alu_out, WB_rfile_wd ;
+	wire [4:0] WB_rfile_wn ;
+	
+	// **************module instantiations*************//
+	
+	// IF Stage
+	assign PCSrc = 1'b0 ;
+	assign pc_next = PCSrc ? MEM_b_tgt : IF_pc_incr ;
+	add32 PCADD( .a(pc), .b(32'd4), .result(IF_pc_incr) );
+	
+	reg32 PC( .clk(clk), .rst(rst), .en_reg(1'b1), .d_in(pc_next), .d_out(pc) );
+	//mux2 #(32) JMUX( .sel(Jump), .a(branch_addr), .b(jump_addr), .y(pc_next) );
+	memory InstrMem( .clk(clk), .MemRead(1'b1), .MemWrite(1'b0), .wd(32'd0), .addr(pc), .rd(IF_instr) );
+
+	// IFID
+	IF_ID IFID( .clk(clk), .in_pc(IF_pc_incr), .in_instruction(IF_instr), .out_pc(ID_pc_incr), .out_instruction(ID_instr) ) ;
+	
+	// ID Stage
+	assign opcode = ID_instr[31:26];
+    assign rs = ID_instr[25:21];
+    assign ID_rt = ID_instr[20:16];
+    assign ID_rd = ID_instr[15:11];
+    assign immed = ID_instr[15:0];
+    assign jumpoffset = ID_instr[25:0];
+	reg_file RegFile( .clk(clk), .RegWrite(RegWrite), .RN1(rs), .RN2(ID_rt), .WN(WB_rfile_wn), 
+					  .WD(WB_rfile_wd), .RD1(ID_rfile_rd1), .RD2(ID_rfile_rd2) );
+	
+	sign_extend SignExt( .immed_in(immed), .ext_immed_out(ID_extend_immed) ); // sign-extender
+	control_pipeline CTL(.opcode(opcode), .control(WME_signal) );
+	
+	
+	
+	// IDEX
+	ID_EX IDEX( .clk(clk), .in_ctl(WME_signal), .RegDst(RegDst), .ALUSrc(ALUSrc), .ALUOp(ALUOp), .out_ctl(WM_signal), 
+				  .in_rt(ID_rt), .in_rd(ID_rd), .in_imm(ID_extend_immed), .in_pc(ID_pc_incr), 
+				  .in_rd1(ID_rfile_rd1), .in_rd2(ID_rfile_rd2), .out_rt(EX_rt), .out_rd(EX_rd), 
+				  .out_imm(EX_extend_immed), .out_pc(EX_pc_incr), .out_rd1(EX_rfile_rd1), .out_rd2(EX_rfile_rd2) ) ;
+				  
+	// EX Stage
+	mux2 #(32) ALUMUX( .sel(ALUSrc), .a(EX_rfile_rd2), .b(EX_extend_immed), .y(alu_b) );
+
+	assign funct = EX_extend_immed[5:0] ;
+	alu_ctl ALUCTL( .ALUOp(ALUOp), .Funct(EX_extend_immed[5:0]), .ALUOperation(Operation) );
+
+	alu ALU( .ctl(Operation), .a(EX_rfile_rd1), .b(alu_b), .result(EX_alu_out), .zero(EX_zero), .shamt(EX_extend_immed[10:6]) );
+	
+	mux2 #(5) RFMUX( .sel(RegDst), .a(EX_rt), .b(EX_rd), .y(EX_rfile_wn) );
+
+    assign b_offset = EX_extend_immed << 2; // branch offset shifter
+	
+	add32 BRADD( .a(EX_pc_incr), .b(b_offset), .result(EX_b_tgt) );
+	
+	
+	// EXMEM
+	
+	EX_MEM EXMEM( .clk(clk), .in_ctl(WM_signal), .Branch(Branch), .MemWrite(MemWrite), .MemRead(MemRead), .out_ctl(W_signal),
+				  .in_b_tgt(EX_b_tgt), .in_alu_out(EX_alu_out), .in_zero(EX_zero), .in_rd2(EX_rfile_rd2), .in_wn(EX_rfile_wn),
+				  .out_b_tgt(MEM_b_tgt), .out_alu_out(MEM_alu_out), .out_zero(MEM_zero), .out_rd2(MEM_rfile_rd2), .out_wn(MEM_rfile_wn) ) ;
+
+	// MEM Stage		  
+	memory DatMem( .clk(clk), .MemRead(MemRead), .MemWrite(MemWrite), .wd(MEM_rfile_rd2), 
+				   .addr(MEM_alu_out), .rd(MEM_dmem_rdata) );
+
+    and BR_AND(PCSrc, Branch, MEM_zero);
+
+    // MEMWB
+	MEM_WB MEMWB( .clk(clk), .in_ctl(W_signal), .RegWrite(RegWrite), .MemtoReg(MemtoReg), 
+				  .in_dmem_rdata(MEM_dmem_rdata), .in_alu_out(MEM_alu_out), .in_wn(MEM_rfile_wn),
+				  .out_dmem_rdata(WB_dmem_rdata), .out_alu_out(WB_alu_out), .out_wn(WB_rfile_wn) ) ;
+	// WB Stage
+
+    mux2 #(32) WRMUX( .sel(MemtoReg), .a(WB_alu_out), .b(WB_dmem_rdata), .y(WB_rfile_wd) );
+
+
+		   
+				   
+endmodule

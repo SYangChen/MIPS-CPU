@@ -1,0 +1,395 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/yayin/Desktop/Course/Computer_Organization/Final Project/mips_pipeline
+vadd32
+Z0 !s110 1529485524
+!i10b 1
+!s100 QV<0ZKKd^9l`>f?T>;17f2
+Ih:bc7foj6nGdnOD_<VFNd3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/yayin/Desktop/mips_pipeline_final
+w1323725068
+8C:/Users/yayin/Desktop/mips_pipeline_final/add32.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/add32.v
+L0 5
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1529485524.000000
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/add32.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/add32.v|
+!s101 -O0
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+valu
+R0
+!i10b 1
+!s100 dU?_HKjn=JbMK@hYKfF1O1
+I4Rz_cha6[3m>7UOfkVHMK0
+R1
+R2
+w1529438394
+8C:/Users/yayin/Desktop/mips_pipeline_final/alu.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/alu.v
+L0 12
+R3
+r1
+!s85 0
+31
+Z5 !s108 1529485523.000000
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/alu.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/alu.v|
+!s101 -O0
+!i113 1
+R4
+valu_ctl
+Z6 !s110 1529485523
+!i10b 1
+!s100 cGX0a?Pc^0hJn>hd?7Tz`3
+Ik6bWC`F@HgJ9?de;on^@_1
+R1
+R2
+w1529224103
+8C:/Users/yayin/Desktop/mips_pipeline_final/alu_ctl.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/alu_ctl.v
+L0 11
+R3
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/alu_ctl.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/alu_ctl.v|
+!s101 -O0
+!i113 1
+R4
+vcontrol_pipeline
+R6
+!i10b 1
+!s100 `CF=hbS2];:@@?3Y:Cf^?2
+I360@d5?Ee:z=HSYAEjR?I1
+R1
+R2
+w1529438435
+8C:/Users/yayin/Desktop/mips_pipeline_final/control_pipeline.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/control_pipeline.v
+L0 17
+R3
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/control_pipeline.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/control_pipeline.v|
+!s101 -O0
+!i113 1
+R4
+vEX_MEM
+R6
+!i10b 1
+!s100 =:@3R2]N[@ejRLY4Yj@9z0
+Iei44=CShm[liLjb=bd?C82
+R1
+R2
+w1529433170
+8C:/Users/yayin/Desktop/mips_pipeline_final/EX_MEM.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/EX_MEM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/EX_MEM.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/EX_MEM.v|
+!s101 -O0
+!i113 1
+R4
+n@e@x_@m@e@m
+vFA
+R6
+!i10b 1
+!s100 i7Z>:^nU;AkV4@k[:gD_M3
+IAf<hH[^64fkK=kU=0U=A43
+R1
+R2
+w1529058317
+8C:/Users/yayin/Desktop/mips_pipeline_final/FA.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/FA.v
+L0 2
+R3
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/FA.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/FA.v|
+!s101 -O0
+!i113 1
+R4
+n@f@a
+vID_EX
+Z7 !s110 1529485522
+!i10b 1
+!s100 f4jV:BgY]T>?[3z@22^N;2
+I9KDRYHgMojnCn`Gjn_l0g2
+R1
+R2
+w1529431486
+8C:/Users/yayin/Desktop/mips_pipeline_final/ID_EX.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/ID_EX.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z8 !s108 1529485522.000000
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/ID_EX.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/ID_EX.v|
+!s101 -O0
+!i113 1
+R4
+n@i@d_@e@x
+vIF_ID
+R7
+!i10b 1
+!s100 @96bGnCG9W_>6:?@ock]Z2
+Ik`T:9T7k4f85?8m>2I0h=1
+R1
+R2
+w1529398804
+8C:/Users/yayin/Desktop/mips_pipeline_final/IF_ID.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/IF_ID.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/IF_ID.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/IF_ID.v|
+!s101 -O0
+!i113 1
+R4
+n@i@f_@i@d
+vMEM_WB
+R7
+!i10b 1
+!s100 YA6;b9kWo:`bO>OdM^1>B2
+IBocM764hdKCNF^nlQ;:Mb1
+R1
+R2
+w1529431913
+8C:/Users/yayin/Desktop/mips_pipeline_final/MEM_WB.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/MEM_WB.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/MEM_WB.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/MEM_WB.v|
+!s101 -O0
+!i113 1
+R4
+n@m@e@m_@w@b
+vmemory
+R7
+!i10b 1
+!s100 DY1hn5B6PF?X7CS1Hkf8@2
+IKV_fBk]fd7RO40mVAKQSz0
+R1
+R2
+Z9 w1323786478
+8C:/Users/yayin/Desktop/mips_pipeline_final/memory.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/memory.v
+L0 14
+R3
+r1
+!s85 0
+31
+Z10 !s108 1529485521.000000
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/memory.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/memory.v|
+!s101 -O0
+!i113 1
+R4
+vmips_pipeline
+Z11 !s110 1529485521
+!i10b 1
+!s100 ZWjgW>_CV0=GVgBTKozRR1
+I`IiKk_OD[2nz@fikD22a23
+R1
+R2
+w1529485378
+8C:/Users/yayin/Desktop/mips_pipeline_final/mips_pipeline.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/mips_pipeline.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/mips_pipeline.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/mips_pipeline.v|
+!s101 -O0
+!i113 1
+R4
+vmux2
+R11
+!i10b 1
+!s100 k7RnaEGa7k9I5X;o_c69A2
+IY9f;XBdCiYL31fRm70;0f1
+R1
+R2
+w1323725038
+8C:/Users/yayin/Desktop/mips_pipeline_final/mux2.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/mux2.v
+L0 5
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/mux2.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/mux2.v|
+!s101 -O0
+!i113 1
+R4
+vMux_1bALU
+R11
+!i10b 1
+!s100 1`:baNBQ[oHL^COCEzQJK1
+I2RKTV1Qa:39U>_aKDF9`k0
+R1
+R2
+w1529058337
+8C:/Users/yayin/Desktop/mips_pipeline_final/Mux_1bALU.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/Mux_1bALU.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/Mux_1bALU.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/Mux_1bALU.v|
+!s101 -O0
+!i113 1
+R4
+n@mux_1b@a@l@u
+vreg32
+R11
+!i10b 1
+!s100 X7D[Y7GI@:a]8[LLGKMAX0
+I>f<hnOhCz5IeWF]F4Kd6H1
+R1
+R2
+R9
+8C:/Users/yayin/Desktop/mips_pipeline_final/reg32.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/reg32.v
+L0 13
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/reg32.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/reg32.v|
+!s101 -O0
+!i113 1
+R4
+vreg_file
+R11
+!i10b 1
+!s100 IK2[C4dJ=]TeN7i2VzI?G3
+IPh@I:Llf7RzDYCKP5mRQS0
+R1
+R2
+w1529084294
+8C:/Users/yayin/Desktop/mips_pipeline_final/reg_file.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/reg_file.v
+L0 16
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/reg_file.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/reg_file.v|
+!s101 -O0
+!i113 1
+R4
+vShifter
+Z12 !s110 1529485520
+!i10b 1
+!s100 KMednC>Soz`RPP6]kF=Bh0
+IP8:`LQ9hZN]fQ3hDHeZGO0
+R1
+R2
+w1529436961
+8C:/Users/yayin/Desktop/mips_pipeline_final/Shifter.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/Shifter.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z13 !s108 1529485520.000000
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/Shifter.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/Shifter.v|
+!s101 -O0
+!i113 1
+R4
+n@shifter
+vsign_extend
+R12
+!i10b 1
+!s100 bnM29P^jL69V9e7A2::Tk2
+IgA^YR:CLnB7Hn@Gn5AnfD3
+R1
+R2
+R9
+8C:/Users/yayin/Desktop/mips_pipeline_final/sign extend.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/sign extend.v
+L0 10
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/sign extend.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/sign extend.v|
+!s101 -O0
+!i113 1
+R4
+vtb_pipeline
+R12
+!i10b 1
+!s100 5<^J@h]FC]kbGG4^:2S2L1
+IW5d[YNYKGQh0NFVe;AgOc2
+R1
+R2
+w1529436114
+8C:/Users/yayin/Desktop/mips_pipeline_final/tb_pipeline.v
+FC:/Users/yayin/Desktop/mips_pipeline_final/tb_pipeline.v
+L0 5
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/yayin/Desktop/mips_pipeline_final/tb_pipeline.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|-O0|C:/Users/yayin/Desktop/mips_pipeline_final/tb_pipeline.v|
+!s101 -O0
+!i113 1
+R4
