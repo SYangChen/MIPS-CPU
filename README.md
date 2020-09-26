@@ -6,8 +6,8 @@
 ![pic](https://github.com/SYangChen/MIPS-CPU/blob/master/MIPS-CPU_pipeline/MIPS-CPU_pipeline.png?raw=true)
 
 # Environment
-ModelSim
-Verilog
+##### ModelSim
+##### Verilog
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
