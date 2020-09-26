@@ -3,7 +3,7 @@
 
 * Implement MIPS CPU with 16 instructions ( AND, OR, ADD, SUB, SLT, SLL, SLTI, LW, SW, BEQ, J, JAL, DIVU, MFHI, MFLO, NOP )
 
-![](https://i.imgur.com/HbR06Og.png)
+![pic](https://github.com/SYangChen/MIPS-CPU/blob/master/MIPS-CPU_pipeline/MIPS-CPU_pipeline.png?raw=true)
 
 # Environment
 ModelSim
